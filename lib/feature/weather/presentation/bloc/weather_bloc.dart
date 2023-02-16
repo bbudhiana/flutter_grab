@@ -24,7 +24,7 @@ class WeatherBloc extends Bloc<WeatherEvent, WeatherState> {
           },
         );
       },
-      transformer: debounce(Duration(milliseconds: 500)),
+      transformer: debounce(const Duration(milliseconds: 1500)),
     );
   }
 
