@@ -1,9 +1,8 @@
 class ConfigEnvironment {
   static Map<String, dynamic>? _config;
   static Environment? environment;
-  // static const String apiKey = 'cc95d932d5a45d33a9527d5019475f2c';
-  static const String apiKey =
-      'GvWH6TSUeCZH7TDHbgBeu30XEDEay7T0CjUWBQW2a0mE5c0XzGJ5kRX9M9Z1GzEj';
+  static const String apiKey = 'cc95d932d5a45d33a9527d5019475f2c';
+  //static const String apiKey = 'GvWH6TSUeCZH7TDHbgBeu30XEDEay7T0CjUWBQW2a0mE5c0XzGJ5kRX9M9Z1GzEj';
 
   static void setEnvironment(Environment env) {
     environment = env;
