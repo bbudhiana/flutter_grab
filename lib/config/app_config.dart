@@ -20,16 +20,14 @@ class ConfigEnvironment {
     }
   }
 
-  static get url => _config![_Config.url];
-  static get authURL => _config![_Config.authURL];
-  static get buildFlavorType => _config![_Config.buildFlavorType];
+  static dynamic get url => _config![_Config.url];
+  static dynamic get authURL => _config![_Config.authURL];
+  static dynamic get buildFlavorType => _config![_Config.buildFlavorType];
 
-  static String currentWeatherByName(String city) =>
-      _config![_Config.url] + '/weather?q=$city&appid=$apiKey';
-  static String weatherIcon(String iconCode) =>
-      'http://openweathermap.org/img/wn/$iconCode@2x.png';
+  static String currentWeatherByName(String city) => _config![_Config.url] + '/weather?q=$city&appid=$apiKey';
+  static String weatherIcon(String iconCode) => 'http://openweathermap.org/img/wn/$iconCode@2x.png';
 
-  static get loginTrial => _config![_Config.authURL];
+  static dynamic get loginTrial => _config![_Config.authURL];
 
   static String baseurl(String url) => _config![_Config.url] + url;
 }

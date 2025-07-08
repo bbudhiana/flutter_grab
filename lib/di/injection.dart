@@ -5,7 +5,6 @@ import '../feature/weather/domain/usecases/get_current_weather.dart';
 
 import 'package:http/http.dart' as http;
 import 'package:get_it/get_it.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 import '../feature/weather/presentation/bloc/weather_bloc.dart';
 

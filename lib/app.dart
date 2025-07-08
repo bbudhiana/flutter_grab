@@ -7,7 +7,7 @@ import 'di/injection.dart' as di;
 import 'config/routes.dart' as router;
 
 class MyApp extends StatefulWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   State<MyApp> createState() => _MyAppState();

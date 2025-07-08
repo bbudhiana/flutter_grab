@@ -67,14 +67,10 @@ class ProfileTextFieldWidget<T> extends StatelessWidget {
                 filled: true,
                 fillColor: SharedColors.bahasoWhiteColor,
                 hintText: hintText,
-                hintStyle: const TextStyle(
-                    color: SharedColors.bahasoGreyColor,
-                    fontSize: 14,
-                    fontWeight: FontWeight.w400),
+                hintStyle: const TextStyle(color: SharedColors.bahasoGreyColor, fontSize: 14, fontWeight: FontWeight.w400),
                 contentPadding: const EdgeInsets.symmetric(vertical: 12.0),
                 enabledBorder: const UnderlineInputBorder(
-                  borderSide: BorderSide(
-                      color: SharedColors.bahasoPrimaryColor, width: 2.0),
+                  borderSide: BorderSide(color: SharedColors.bahasoPrimaryColor, width: 2.0),
                 ),
                 suffixIcon: suffixIcon),
           ),
@@ -82,7 +78,7 @@ class ProfileTextFieldWidget<T> extends StatelessWidget {
         const SizedBox(
           height: 10,
         ),
-        Align(
+        const Align(
           alignment: Alignment.centerLeft,
           /* child: invalid! || validatorType == ComparePassword.invalid
               ? Text(

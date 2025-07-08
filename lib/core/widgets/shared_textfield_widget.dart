@@ -43,7 +43,7 @@ class SharedTextFieldWidget<T> extends StatelessWidget {
           alignment: Alignment.centerLeft,
           child: Text(
             label,
-            style: TextStyle(
+            style: const TextStyle(
               fontWeight: FontWeight.w400,
               fontSize: 16,
               /* color: invalid! || validatorType == ComparePassword.invalid
@@ -65,12 +65,8 @@ class SharedTextFieldWidget<T> extends StatelessWidget {
                 filled: true,
                 fillColor: SharedColors.bahasoWhiteColor,
                 hintText: hintText,
-                hintStyle: const TextStyle(
-                    color: SharedColors.bahasoGreyColor,
-                    fontSize: 14,
-                    fontWeight: FontWeight.w400),
-                contentPadding: const EdgeInsets.symmetric(
-                    vertical: 12.0, horizontal: 16.0),
+                hintStyle: const TextStyle(color: SharedColors.bahasoGreyColor, fontSize: 14, fontWeight: FontWeight.w400),
+                contentPadding: const EdgeInsets.symmetric(vertical: 12.0, horizontal: 16.0),
                 border: OutlineInputBorder(
                   /* borderSide:
                       invalid! || validatorType == ComparePassword.invalid
@@ -89,8 +85,7 @@ class SharedTextFieldWidget<T> extends StatelessWidget {
                   borderRadius: BorderRadius.circular(8.0),
                 ),
                 focusedBorder: OutlineInputBorder(
-                  borderSide: const BorderSide(
-                      color: SharedColors.bahasoPrimaryColor, width: 1.0),
+                  borderSide: const BorderSide(color: SharedColors.bahasoPrimaryColor, width: 1.0),
                   borderRadius: BorderRadius.circular(8.0),
                 ),
                 suffixIcon: suffixIcon
@@ -102,7 +97,7 @@ class SharedTextFieldWidget<T> extends StatelessWidget {
         const SizedBox(
           height: 5,
         ),
-        Align(
+        const Align(
           alignment: Alignment.centerLeft,
           /* child: invalid! || validatorType == ComparePassword.invalid
               ? Text(

@@ -9,8 +9,7 @@ class SharedModalDialog {
     return utility;
   }
 
-  showAlertDialog(BuildContext context, String alertTitle, String alertMessage,
-      Image alertImage, dynamic alertRoute) {
+  void showAlertDialog(BuildContext context, String alertTitle, String alertMessage, Image alertImage, dynamic alertRoute) {
     Widget okButton = ElevatedButton(
       onPressed: () {
         Navigator.pop(context);
@@ -25,8 +24,7 @@ class SharedModalDialog {
     );
 
     AlertDialog alert = AlertDialog(
-      shape: const RoundedRectangleBorder(
-          borderRadius: BorderRadius.all(Radius.circular(24.0))),
+      shape: const RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(24.0))),
       content: SingleChildScrollView(
         child: ListBody(
           children: <Widget>[
